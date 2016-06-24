@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>P2P via WebRTC</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+        WebRTC P2P Demo
+      </header>
+      <main>
+        <div id="video-container" class="row">
+          <div class="col-md-6">
+            <video id="my-video" autoplay muted="true" class="my-video"></video>
+          </div>
+
+          <div class="col-md-6">
+            <video id="their-video" autoplay class="their-video"></video>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <p>
+            Your id: <span id="my-id"></span>
+          </p>
+          <p>
+            <input type="text" placeholder="call user id" id="callto-id" value="">
+            <button id="make-call" class="btn btn-primary">Call</button>
+          </p>
+          <p>
+            Their id: <span id="their-id"></span>
+          </p>
+          <p>
+
+            <button id="end-call" class="btn btn-danger">End</button>
+          </p>
+        </div>
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+
+    <!-- bower:js -->
+    <script src="/lib/peerjs/peer.js"></script>
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- inject:js -->
+    <script src="/js/index.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

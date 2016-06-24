@@ -1,0 +1,42 @@
+{
+  "name": "p2pjs",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "jimmcgaw <jpmcgaw@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "peerjs": "^0.3.14",
+    "jquery": "^3.0.0",
+    "bootstrap": "^3.3.6"
+  },
+  "resolutions": {
+    "jquery": "1.9.1 - 2"
+  },
+  "overrides": {
+      "bootstrap": {
+          "main": [
+              "dist/js/bootstrap.js",
+              "dist/css/bootstrap.css",
+              "less/bootstrap.less"
+          ]
+      },
+      "font-awesome": {
+          "main": [
+              "less/font-awesome.less",
+              "css/font-awesome.css",
+              "scss/font-awesome.scss"
+          ]
+      }
+  }
+}
