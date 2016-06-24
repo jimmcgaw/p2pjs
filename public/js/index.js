@@ -9,7 +9,7 @@
     'path': '/peerjs',
     'debug': 3,
     'key': 'peerjs',
-    'port': 80
+    'port': location.port || (location.protocol === 'https:' ? 443 : 80),
   });
 
   peer.on('open', function(){
